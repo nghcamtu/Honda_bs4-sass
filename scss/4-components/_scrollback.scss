@@ -1,0 +1,31 @@
+/*! SCROLL BACK TO TOP*/ 
+#scroll-back {
+    a{
+        width: 6rem;
+        height: 5rem;
+        padding: 0.8rem 0.7rem;
+        background-color: var(--blue);
+        color: var(--white);
+        border-radius: 0.5rem 0 0 0.5rem; //top-left top-right bottom-right bottom-left
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    margin: 0 0rem 7rem 0;
+    
+}
+
+// #scroll-back .backToTopLink { opacity: 0;}
+// #scroll-back .cd-top--is-visible { 
+//     /* back-to-top button visible */
+//     visibility: visible;
+//     opacity: 1;
+// }
+
+// #scroll-back .cd-top--fade-out { 
+//     /* reduce button opacity if user keeps scrolling */
+//     opacity: .5;
+// }

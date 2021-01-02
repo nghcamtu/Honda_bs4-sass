@@ -1,0 +1,8 @@
+//*************************************
+//* IMPORT ALL FILES IN BASE FOLDER at the same time
+//* lý do: tất cả các file thuộc về base folder mặc định được load hết 1 lúc, đỡ quên file này file kia 
+//*************************************
+
+@import "./reset";
+@import "./button";
+@import "./typography";

@@ -1,0 +1,14 @@
+
+@import "./1-helper/1-helpers";
+// @import "./../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./2-tool-vendor/2-tool-vendor"; 
+@import "./3-base/3-base";
+
+@import "./4-components/4-components";
+@import "./5-layout/5-layout";
+
+// có 2 loại cmt trong SASS, 
+// loại /**/ thì sẽ hiển thị comment trong file CSS, gọi là loud comment, nhưng mà nên bắt đầu bằng dấu ! để tránh bị biên dịch nhầm, 
+    // tức là ghi như vầy /*! This is a comment */ mới đúng
+// loại // thì sẽ không hiển thị comment trong file CSS, gọi là silent comment

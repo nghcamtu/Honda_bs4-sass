@@ -1,0 +1,79 @@
+/*!CONTACT SECTION*/
+.contact {
+    background-color: var(--gray);
+    
+    &--with-hr{
+        border-top: 1px solid var(--gray-line);
+        border-bottom: 1px solid var(--gray-line);
+        padding: 2rem 0;
+        margin: 0 0.5rem;
+    }
+    
+    h4{
+        letter-spacing: 1px;
+        padding-bottom: 0.5rem;
+    }
+    a {
+        padding: 0 0.2rem;
+    }
+    
+    //chỗ này là code của input
+    // dùng Nội suy thử chỗ này để lấy luôn .contact selector 
+    #{&}__inp-search{
+        border-radius: 4rem;  
+        border-left: none;
+        color: var(--blue-ocean);
+    }
+    ::placeholder{
+        color: var(--blue-ocean);
+        font-size: 0.8rem;
+        font-weight: 500;
+        
+    }
+    //css của search group (contact__inp-search-group)
+    #{&}__inp-search-group{
+       display: flex;
+    //    justify-content: flex-end;
+    
+    }
+    
+    
+    
+    //css của item thứ 3 trong row
+    .row {
+        .col-md-4{
+            &:last-child{
+                // background-color: yellow;
+                text-align: right;
+            }
+        }        
+    }
+    
+}
+
+
+.contact__icon-wrapper {
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--blue-ocean);
+    i {
+        color: var(--white);
+    }
+
+}
+.contact__item {
+    a {
+        display: inline-block;
+    }
+    //chỗ này là chỗ icon search
+    .input-group-text{
+        border-right: none;
+        border-radius: 4rem;
+        color: var(--blue-ocean);
+
+    }
+    
+}

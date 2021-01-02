@@ -1,0 +1,36 @@
+/*! COPYRIGHT SECTION*/ 
+.copyright{
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding: 2rem 2rem;
+    
+    a{
+        color: var(--white);
+    }
+    &__trademark {
+        font-weight: 600;
+    
+    }
+    svg{
+        fill: var(--white);
+    }
+
+}
+.copyright__right {
+    text-align: right;
+    font-weight: 500;
+    ul{
+        li {
+            display: inline-block;
+            border-right: 1px solid var(--white);
+            a{
+                padding: 0 0.5rem; 
+            }
+        }
+        &:last-child{
+            padding: 0.5rem 0 0;
+        }
+    }
+}

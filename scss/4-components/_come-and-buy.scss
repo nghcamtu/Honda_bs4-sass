@@ -1,0 +1,81 @@
+/*! COME-AND-BUY SECTION*/ 
+#come-and-buy{
+    background-color: var(--gray-medium);
+    padding: 4rem 2rem;
+}
+.come-and-buy__nav{
+    margin-bottom: 2rem;
+}
+
+.come-and-buy__nav-item{
+    text-align: center;
+    background-color: var(--white);
+    padding-bottom: 2rem;
+    border-radius: 0.3rem;
+    box-shadow: -5px 5px 5px 1px var(--white-shadow);
+    border: 1px solid var(--white-shadow);
+    
+    div{padding: 2rem 0;}
+    p{margin-top: 2rem 0;}
+    
+    a{
+        color: var(--blue-dark);
+        text-decoration: none;
+        font-weight: 600;
+    }
+    a:hover {
+        button { //button thì có code riêng 1 file rồi, nhưng mà chỗ này custom để khi hover lên nguyên cái a 
+            background-color: transparent;
+            color: var(--blue);
+        }
+    }
+    
+}
+
+.come-and-buy__howto {
+    a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        
+        &:hover{
+            color: var(--white);
+            button{ //button thì có code riêng 1 file rồi, nhưng mà chỗ này là để khi hover lên nguyên cái a 
+                background-color: transparent;
+                color: var(--blue-ocean);
+            }
+        }
+    }
+    padding: 0 3rem;
+}
+.come-and-buy__howto-image{
+    position: relative;
+
+}
+
+.come-and-buy__howto-description{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 95%;
+    color: var(--white);
+    button {
+        margin-bottom: 0.6rem;
+        }
+    h3{
+        color: var(--white);
+        }
+}
+.come-and-buy__howto-left {
+    p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        span {color: var(--blue-ocean);}    
+    }
+}
+.come-and-buy__howto-right {
+    .come-and-buy__howto-description {
+        padding: 0 2rem;
+        font-size: 0.9rem;
+    }
+}

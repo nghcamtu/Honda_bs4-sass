@@ -1,0 +1,134 @@
+/*! BUTTON TỰ TẠO*/
+.btn-outline-white {
+    @include border-radius(4rem, 0);
+    @include button-outline-variant($white, $color-hover: color-yiq($blue-ocean), $active-background: $blue-ocean, $active-border: $white);
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: var(--blue-ocean);
+        background-color: var(--white);
+        color: var(--blue-ocean);
+        // transition: all 0.2s;
+    }
+}
+
+.btn-outline-red-scarlet {
+    @include border-radius(4rem, 0);
+    @include button-outline-variant($white, $color-hover: color-yiq($red), $active-background: $white, $active-border: $white);
+    background-color: var(--red);
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 0.2rem 1.4rem;
+
+    &:hover {
+        color: var(--red);
+    }
+}
+
+.btn-outline-white-milk {
+    @include border-radius(4rem, 0);
+    @include button-outline-variant($red, $color-hover: color-yiq($red), $active-background: $white, $active-border: $red);
+    background-color: var(--white);
+    text-transform: uppercase;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 0.2rem 1.6rem;
+
+    &:hover {
+        // border-style: none;
+        background-color: $red;
+        color: var(--white);
+        transition: all 0s;
+    }
+}
+
+.btn-outline-primary {
+    //background primary, viền trắng, hover nền trắng viền trắng chữ xanh
+    @include border-radius(4rem, 0);
+    @include button-outline-variant($white, $color-hover: color-yiq($blue), $active-background: $white, $active-border: $white);
+    text-transform: uppercase;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 0.2rem 1.6rem;
+    background-color: var(--blue);
+
+    &:hover {
+
+        color: var(--blue);
+        transition: all 0s;
+    }
+}
+
+.btn-danger {
+    border-radius: 4rem; //xài include mixin cũng được
+    text-transform: uppercase;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 0.2rem 1.6rem;
+
+    &:hover {
+        border-color: var(--white);
+        background-color: var(--white);
+        color: var(--red);
+        transition: all 0s;
+    }
+
+}
+
+.btn-primary {
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0.2rem 2rem;
+    letter-spacing: 1px;
+
+    &:hover {
+        background-color: var(--white);
+        color: var(--blue);
+        transition: all 0s;
+    }
+
+}
+
+.btn-blue-ocean {
+    @include  button-variant($blue-ocean, $blue-ocean, $hover-background: $blue-ocean, $hover-border: $blue-ocean, $active-background: $blue-ocean, $active-border: $blue-ocean);
+    border-radius: 4rem; 
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 0.3rem 1rem;
+    &:hover {
+        background-color: transparent;
+        color: var(--blue-ocean);
+    }
+}
+
+.btn-red-scarlet {
+    @include button-variant($red, $red, $hover-background: $white, $hover-border: $red, $active-background: $red, $active-border: $red);   
+    border-radius: 4rem; 
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 0.3rem 1.3rem;
+    &:hover {
+        background-color: transparent;
+        color: var(--red-scarlet);
+    }
+}
+
+.btn-primary-reverse {
+    @include button-variant($white, $blue, $hover-background: $blue, $hover-border: $blue, $active-background: $white, $active-border: $blue);
+    border-radius: 4rem; 
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 0.3rem 1rem;
+    color: var(--blue);
+    &:active{
+        color: var(--blue);
+    }
+    
+}

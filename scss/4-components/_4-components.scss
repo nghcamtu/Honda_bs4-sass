@@ -1,0 +1,19 @@
+//*************************************
+//* IMPORT ALL FILES IN COMPONENT FOLDER at the same time
+//* lý do: tất cả các file thuộc về components folder mặc định được load hết 1 lúc, đỡ quên file này file kia 
+//*************************************
+
+@import "./header";
+@import "./style-index-page";
+@import "./promoted-carousel";
+@import "./ads";
+@import "./product";
+@import "./come-and-buy";
+@import "./discover";
+@import "./subsection";
+@import "./logo";
+@import "./contact";
+@import "./links";
+@import "./copyright";
+@import "./cookie";
+@import "./scrollback";

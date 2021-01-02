@@ -1,0 +1,25 @@
+/*! LINKS SECTION*/ 
+.links{
+    background-color: var(--gray);
+    
+    &--gray-theme{
+        margin: 0 0.5rem;
+        padding: 2rem 0 5rem;
+    }
+    
+}
+.links__item {
+    h3{
+        font-size: 0.875rem;
+        letter-spacing: 0.5px;
+    }
+    a{
+        color: var(--blue-dark);
+        font-size: 0.8rem;
+        font-weight: 500;
+    
+    }
+    // &:last-child{
+        
+    // }
+}

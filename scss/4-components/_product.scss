@@ -1,0 +1,78 @@
+#product {
+    header.product__title{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        letter-spacing: -2px;
+    }
+
+}
+
+/*! PRODUCT SECTION*/ 
+.product__text-overlay{
+    .product__title {
+        font-weight: 600;
+        span {
+            font-weight: 500;
+        }
+    }
+    
+}
+
+.product__carousel-nav {
+    background-color: transparent;
+    padding-bottom: 2rem;
+    
+    li {
+        padding: 0 1rem;
+    }
+    
+    a {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--blue-dark);
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        padding: 0;
+        &:hover{
+            color: var(--blue-light);
+        }
+    }
+    .active {
+        border-bottom: 5px solid var(--blue);
+        border-radius: none!important;
+    }
+    
+}
+.carousel-item {
+    position: relative;
+}
+.product__text-overlay {
+    color: var(--white);
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 3%;
+    padding: 3rem 2rem;
+    
+    background-color: yellowgreen;
+}
+.product__stats{
+    justify-content: space-evenly;
+}
+
+.carousel-control-prev{
+    .carousel-control-prev-icon{
+        //phải chỉnh height chỗ này cho icon, tại bên bs4 file variable nó chỉ có custom width thôi, với nó lấy width=height, nên phải chỉnh tay chỗ này
+        @include resumeDeclaration-Icon-Height-Navigation;
+ 
+    }
+}
+
+.carousel-control-next{
+    .carousel-control-next-icon{
+        @include resumeDeclaration-Icon-Height-Navigation;
+       
+    }
+}
+

@@ -1,0 +1,15 @@
+// Custom height lại cho navigation của carousel
+@mixin resumeDeclaration-Icon-Height-Navigation{
+    height: 6vw;
+}
+
+// @mixin borderRadius-Control-Navigation {
+//     @extend 
+// }
+
+// trong boders.scss bs4 có các class quy định nè, nhưng mà viết cái mixin để xài cho tiện
+// @mixin roundedNav {
+//     $border-radius: 0 0.25rem 0.25rem 0;
+//     // border-#{$position}-radius: $border-radius; 
+//     // border-bottom-#{$position}-radius: $border-radius;
+// }

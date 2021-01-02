@@ -1,0 +1,8 @@
+//*************************************
+//* IMPORT ALL HELPER FILES IN HELPERS FOLDER at the same time
+//* lý do: tất cả các file thuộc về helpers folder mặc định được load hết đầu tiên, đỡ quên file này file kia 
+//*************************************
+
+
+@import "./variable";
+@import "./mixin";

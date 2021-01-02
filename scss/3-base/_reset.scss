@@ -1,0 +1,34 @@
+/*! ===============================================================================================*/
+/*! RESET AND GLOBAL CSS */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 100%; //16px, 1rem
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    
+    
+    //AvenirNext-DemiBold,HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif
+}
+
+a {
+    text-decoration: none;
+
+}
+ul { margin: 0;} /*chỗ này set lại 1 lần margin, do mặc định bs4 lấy margin-bottom là 1rem*/
+ul li {
+    list-style-type: none;
+}
+
+.Accord-Redesigned-Badge {
+    fill: #ffffff;
+}
+.civic-sedan-2021 {
+    fill: #fff;
+    stroke: #fff;
+}

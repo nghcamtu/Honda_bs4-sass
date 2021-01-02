@@ -1,0 +1,73 @@
+/*! ADS SECTION*/ 
+#ads {
+    color: var(--white);
+    font-weight: 700;   
+    padding: 2.5rem 4rem;
+    
+}
+
+.ads--half-blue{
+    background: linear-gradient(to bottom, var(--blue-dark) 60%, var(--white) 40%);
+    background-size: cover;
+
+}
+.ads__img {
+    position: relative;
+
+}
+.ads__left-description {
+    position: absolute;
+    width: 95%;
+    height: 30%;
+    top: 70%;
+    text-align: center;
+}
+
+.ads__right-description{
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    top: 30%;
+    left: 5%;
+    padding: 0 1.4rem;
+    
+    p:first-child(){
+        background-color: var(--blue-azure);
+        color: var(--white);
+        text-transform: uppercase;
+        font-weight: 600;
+        width: 8rem;
+        height: 2.4rem;
+        line-height: 2.4rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    
+}
+
+// RESPONSIVE
+@media only screen and (max-width: 992px){
+    #ads{
+        padding: 2rem 0;
+        p{
+            margin-bottom: 0;
+            font-size: 0.8rem!important;
+           
+        }
+        button {
+            font-size: 0.8rem;
+        }
+    }
+    .ads__right {
+        margin-top: 0.6rem;
+    }
+    .ads__right-description{
+        padding-bottom: 1rem;
+        button{ 
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            }
+    }
+
+}
