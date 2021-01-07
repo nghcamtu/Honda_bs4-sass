@@ -1,3 +1,4 @@
+/*! PRODUCT SECTION*/ 
 #product {
     header.product__title{
         font-family: 'Montserrat', sans-serif;
@@ -6,7 +7,6 @@
     }
 }
 
-/*! PRODUCT SECTION*/ 
 .product__text-overlay{
     .product__title {
         font-weight: 600;
@@ -14,9 +14,6 @@
             font-weight: 500;
         }
     }
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     
 }
 
@@ -57,7 +54,12 @@
     left: 3%;
     padding: 3rem 2rem;
     
-    // background-color: yellowgreen;
+    @media only screen and (max-width: 992px){
+        color: var(--white);
+        position: static;
+        width: 100%;
+        background-color: var(--blue-dark);
+    }
 }
 .product__stats{
     justify-content: space-around;
@@ -80,19 +82,89 @@
     .carousel-control-prev-icon{
         //phải chỉnh height chỗ này cho icon, tại bên bs4 file variable nó chỉ có custom width thôi, với nó lấy width=height, nên phải chỉnh tay chỗ này
         @include resumeDeclaration-Icon-Height-Navigation;
- 
+        @media only screen and (max-width: 992px){
+            height: 10vw;
+            width: 5vw;
+        }
     }
 }
 
 .carousel-control-next{
     .carousel-control-next-icon{
         @include resumeDeclaration-Icon-Height-Navigation;
-       
+        @media only screen and (max-width: 992px){
+            height: 10vw;
+            width: 5vw;
+        }
     }
 }
 
 .product__explore{
-    border-top: 5px solid var(--gray-line);
+    border-top: 2px solid var(--gray-pr-line);
     // margin: 5rem 0 0;
+    // background-color: lawngreen;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white);
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 3.5rem;
+    z-index: 3;
+    font-size: 0.9rem;
+    
+    @media only screen and (max-width: 992px) {
+        color: var(--white);
+        width: 100%;
+        position: static;
+        background-color: var(--blue-dark);
+    }
 }
+
+#product__carousel-content{
+    img{
+        @media only screen and (max-width: 992px){
+            position: static;  
+        }
+    }
+}
+
+
+
+
+// @media only screen and (max-width: 992px){
+//     .product__carousel {
+//         .carousel-control-prev-icon{
+//                 height: 10vw;
+//                 width: 5vw;
+//         }
+//         .carousel-control-next-icon{
+//             height: 10vw;
+//             width: 5vw;
+//         }
+    
+//     }
+//     #product__carousel-content{
+//         img{
+//             position: static;  
+//         }
+//     }
+//     .product__text-overlay {
+//         color: var(--white);
+//         // position: absolute;
+//         position: static;
+//         width: 100%;
+//         background-color: var(--blue-dark);
+//         // height: 100%;
+//     }
+//     .product__explore {
+//         color: var(--white);
+//         // position: absolute;
+//         width: 100%;
+//         position: static;
+//         background-color: var(--blue-dark);
+//     }
+// }
 

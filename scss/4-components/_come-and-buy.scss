@@ -1,7 +1,7 @@
 /*! COME-AND-BUY SECTION*/ 
 #come-and-buy{
     background-color: var(--gray-medium);
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 0;
 }
 .come-and-buy__nav{
     margin-bottom: 2rem;
@@ -15,6 +15,7 @@
     box-shadow: -5px 5px 5px 1px var(--white-shadow);
     border: 1px solid var(--white-shadow);
     
+    margin-bottom: 2rem;
     div{padding: 2rem 0;}
     p{margin-top: 2rem 0;}
     
@@ -47,6 +48,15 @@
         }
     }
     padding: 0 3rem;
+    @media only screen and (max-width: 992px){
+        padding: 0 0.5rem;
+    }
+    @media only screen and (max-width: 768px){
+        padding: 0;
+    }
+    @media only screen and (max-width: 576px){
+        padding: 0;
+    }
 }
 .come-and-buy__howto-image{
     position: relative;
@@ -77,5 +87,10 @@
     .come-and-buy__howto-description {
         padding: 0 2rem;
         font-size: 0.9rem;
+    }
+}
+.come-and-buy__howto-item{
+    @media only screen and (max-width: 768px){
+        margin-bottom: 2rem;
     }
 }

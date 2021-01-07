@@ -22,7 +22,7 @@ $blue-title: #06456a;
 $gray-medium: rgb(245, 245, 245);
 $gray: #ededf0;
 $gray-line: #CBCBCB;
-
+$gray-pr-line: #516d82;
 
 /*! GLOBAL:*/
 //CÁCH 1: 
@@ -47,7 +47,8 @@ $colors: ( //custom chỗ này chỉ để nó thêm màu thẳng vào root (ghi
     "blue-title": $blue-title,
     "gray-medium": $gray-medium ,
     "gray": $gray,
-    "gray-line": $gray-line
+    "gray-line": $gray-line,
+    "gray-pr-line": $gray-pr-line
 ); //remove() của BS4 ko chạy nên ko xóa được default color không xài trên BS4 đối với project này, coi lại sau 
 
 $theme-colors: ( //custom theme class cho màu mới nè

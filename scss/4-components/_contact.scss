@@ -5,8 +5,12 @@
     &--with-hr{
         border-top: 1px solid var(--gray-line);
         border-bottom: 1px solid var(--gray-line);
-        padding: 2rem 0;
+        padding: 2rem 0 0;
         margin: 0 0.5rem;
+        @media only screen and (max-width: 576px){
+            border: none;
+            padding: 0;
+        }
     }
     
     h4{
@@ -34,19 +38,19 @@
     #{&}__inp-search-group{
        display: flex;
     //    justify-content: flex-end;
-    
+        @media only screen and (max-width: 768px){
+            padding: 0 5rem;
+        }
+        @media only screen and (max-width: 576px){
+            padding: 0;
+        }
     }
     
     
     
     //css của item thứ 3 trong row
-    .row {
-        .col-md-4{
-            &:last-child{
-                // background-color: yellow;
-                text-align: right;
-            }
-        }        
+    .contact--right{
+        text-align: right;
     }
     
 }
@@ -75,5 +79,26 @@
         color: var(--blue-ocean);
 
     }
-    
+    padding-bottom: 1rem;
+
+}
+.contact__social{
+    @media only screen and (max-width: 576px){
+        display: flex;
+        justify-content: center;
+    }
+    h4{
+        @media only screen and (max-width: 576px){
+            display: none;
+        }
+    }
+}
+.contact__news{
+    @media only screen and (max-width: 576px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
 }

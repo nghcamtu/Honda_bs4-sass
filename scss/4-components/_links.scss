@@ -6,20 +6,32 @@
         margin: 0 0.5rem;
         padding: 2rem 0 5rem;
     }
-    
+    @media only screen and (max-width: 992px){
+        background-color: var(--white);
+    }
 }
 .links__item {
-    h3{
-        font-size: 0.875rem;
-        letter-spacing: 0.5px;
-    }
+    
+       h3{
+            font-size: 0.875rem;
+            letter-spacing: 0.5px;
+            cursor: text;
+            text-decoration: none;
+        }
+    
     a{
         color: var(--blue-dark);
         font-size: 0.8rem;
         font-weight: 500;
-    
     }
-    // &:last-child{
-        
-    // }
+    
+}
+.links__item-title{
+    &:hover{
+        text-decoration: none;
+    }
+    @media only screen and (max-width: 992px){
+        border-top: 1px solid var(--gray--pr-line);
+        border-bottom: 1px solid var(--gray--pr-line);
+    }
 }
