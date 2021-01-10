@@ -13,6 +13,15 @@
         span {
             font-weight: 500;
         }
+        @media only screen and (max-width: 768px){
+            font-size: 0.8rem;
+            margin-bottom: 0;
+        }
+    }
+    p {
+        @media only screen and (max-width: 768px){
+            font-size: 0.7rem;
+        }
     }
     
 }
@@ -60,13 +69,23 @@
         width: 100%;
         background-color: var(--blue-dark);
     }
+    @media only screen and (max-width: 768px){
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        padding: 1rem 1.5rem;
+    }
 }
 .product__stats{
     justify-content: space-around;
     .stat{
         font-size: 2.25rem;
         font-family: 'Montserrat', sans-serif;
-        // font-size: 700;
+        @media only screen and (max-width: 768px){
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
     }
     .label{
         font-weight: 700;
@@ -74,6 +93,10 @@
         span {
             color: var(--blue-ocean);
             font-weight: 700;
+        }
+        @media only screen and (max-width: 768px){
+            font-size: 0.7rem;
+            margin-bottom: 0;
         }
     }
 }
@@ -120,6 +143,15 @@
         width: 100%;
         position: static;
         background-color: var(--blue-dark);
+    }
+    @media only screen and (max-width: 768px) {
+        width: 50%;
+        height: 6%;
+        position: absolute;
+        background-color: var(--blue-dark);
+        padding: 0.2rem 1.5rem;
+        font-size: 0.7rem;
+        p{margin-bottom: 0;}
     }
 }
 

@@ -9360,6 +9360,14 @@ main {
   font-weight: 600; }
   .product__text-overlay .product__title span {
     font-weight: 500; }
+  @media only screen and (max-width: 768px) {
+    .product__text-overlay .product__title {
+      font-size: 0.8rem;
+      margin-bottom: 0; } }
+
+@media only screen and (max-width: 768px) {
+  .product__text-overlay p {
+    font-size: 0.7rem; } }
 
 .product__carousel-nav {
   background-color: transparent;
@@ -9396,6 +9404,13 @@ main {
       position: static;
       width: 100%;
       background-color: var(--blue-dark); } }
+  @media only screen and (max-width: 768px) {
+    .product__text-overlay {
+      position: absolute;
+      width: 40%;
+      height: 100%;
+      background-color: transparent;
+      padding: 1rem 1.5rem; } }
 
 .product__stats {
   -ms-flex-pack: distribute;
@@ -9403,12 +9418,20 @@ main {
   .product__stats .stat {
     font-size: 2.25rem;
     font-family: 'Montserrat', sans-serif; }
+    @media only screen and (max-width: 768px) {
+      .product__stats .stat {
+        font-size: 1rem;
+        margin-bottom: 0; } }
   .product__stats .label {
     font-weight: 700;
     font-size: 0.8rem; }
     .product__stats .label span {
       color: var(--blue-ocean);
       font-weight: 700; }
+    @media only screen and (max-width: 768px) {
+      .product__stats .label {
+        font-size: 0.7rem;
+        margin-bottom: 0; } }
 
 .carousel-control-prev .carousel-control-prev-icon {
   height: 6vw; }
@@ -9443,6 +9466,16 @@ main {
       width: 100%;
       position: static;
       background-color: var(--blue-dark); } }
+  @media only screen and (max-width: 768px) {
+    .product__explore {
+      width: 50%;
+      height: 6%;
+      position: absolute;
+      background-color: var(--blue-dark);
+      padding: 0.2rem 1.5rem;
+      font-size: 0.7rem; }
+      .product__explore p {
+        margin-bottom: 0; } }
 
 @media only screen and (max-width: 992px) {
   #product__carousel-content img {
@@ -9633,6 +9666,9 @@ main {
     border-bottom: 1px solid var(--gray-line);
     padding: 2rem 0 0;
     margin: 0 0.5rem; }
+    @media only screen and (max-width: 992px) {
+      .contact--with-hr {
+        border-bottom: none; } }
     @media only screen and (max-width: 576px) {
       .contact--with-hr {
         border: none;
@@ -9729,28 +9765,33 @@ main {
   .links--gray-theme {
     margin: 0 0.5rem;
     padding: 2rem 0 5rem; }
-  @media only screen and (max-width: 992px) {
-    .links {
-      background-color: var(--white); } }
+    @media only screen and (max-width: 992px) {
+      .links--gray-theme {
+        padding: 0 0 1.5rem; } }
 
 .links__item h3 {
   font-size: 0.875rem;
   letter-spacing: 0.5px;
   cursor: text;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 0; }
+  @media only screen and (max-width: 992px) {
+    .links__item h3 {
+      border-top: 1px solid var(--gray-line);
+      padding: 1rem 0;
+      background-color: var(--gray); } }
 
 .links__item a {
   color: var(--blue-dark);
   font-size: 0.8rem;
   font-weight: 500; }
 
+@media only screen and (max-width: 992px) {
+  .links__item li {
+    margin: 0 1rem 0.2rem; } }
+
 .links__item-title:hover {
   text-decoration: none; }
-
-@media only screen and (max-width: 992px) {
-  .links__item-title {
-    border-top: 1px solid var(--gray--pr-line);
-    border-bottom: 1px solid var(--gray--pr-line); } }
 
 /*! COPYRIGHT SECTION*/
 .copyright {
@@ -9765,6 +9806,9 @@ main {
     font-weight: 600; }
   .copyright svg {
     fill: var(--white); }
+    @media only screen and (max-width: 992px) {
+      .copyright svg {
+        max-width: 95%; } }
 
 .copyright__right {
   text-align: right;
@@ -9772,21 +9816,34 @@ main {
   .copyright__right ul li {
     display: inline-block;
     border-right: 1px solid var(--white); }
+    .copyright__right ul li:last-child {
+      border-right: none; }
     .copyright__right ul li a {
       padding: 0 0.5rem; }
   .copyright__right ul:last-child {
     padding: 0.5rem 0 0; }
+  @media only screen and (max-width: 576px) {
+    .copyright__right {
+      text-align: center; } }
+
+@media only screen and (max-width: 576px) {
+  .copyright__svg-container {
+    margin: 4rem 0 1rem; } }
 
 /*! COOKIE SECTION*/
 .cookie {
   background-color: var(--blue);
   color: var(--white);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 1px;
   padding: 2rem 1rem; }
   .cookie a {
     color: var(--white);
     font-weight: 600; }
+  @media only screen and (max-width: 576px) {
+    .cookie p {
+      text-align: justify;
+      text-align-last: center; } }
 
 /*! SCROLL BACK TO TOP*/
 #scroll-back {

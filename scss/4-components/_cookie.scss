@@ -2,11 +2,18 @@
 .cookie{
     background-color: var(--blue);
     color: var(--white);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 1px;
     padding: 2rem 1rem; 
     a{
         color: var(--white);
         font-weight: 600;
     }
+    p{
+        @media only screen and (max-width: 576px){
+            text-align: justify;
+            text-align-last: center;
+        }
+    }
+
 }
