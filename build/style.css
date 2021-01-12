@@ -9229,7 +9229,8 @@ h4 {
     margin-bottom: 0; }
   .header__mini-group .header__menu-title {
     font-size: 0.7rem;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    display: block; }
 
 @media only screen and (max-width: 992px) {
   .header {
@@ -9245,6 +9246,41 @@ h4 {
     -ms-flex-direction: row;
     flex-direction: row;
     padding: 0 1.6rem; } }
+
+#header__hamburger {
+  width: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer; }
+  #header__hamburger .line {
+    width: 2rem;
+    height: 3px;
+    border-radius: 1rem;
+    background-color: var(--white);
+    margin: 0.25rem 0 0; }
+  #header__hamburger.open .line {
+    margin: 0rem 0.5rem; }
+  #header__hamburger.open .line-1 {
+    -webkit-transform: rotate(45deg) translate(2px, 2px);
+    -ms-transform: rotate(45deg) translate(2px, 2px);
+    transform: rotate(45deg) translate(2px, 2px); }
+  #header__hamburger.open .line-2 {
+    -webkit-transform: rotate(-45deg) translate(-1px, 0);
+    -ms-transform: rotate(-45deg) translate(-1px, 0);
+    transform: rotate(-45deg) translate(-1px, 0); }
+  #header__hamburger.open .header__menu-title {
+    display: none; }
 
 main {
   padding-top: 3rem; }
@@ -9364,6 +9400,9 @@ main {
     .product__text-overlay .product__title {
       font-size: 0.8rem;
       margin-bottom: 0; } }
+  @media only screen and (max-width: 576px) {
+    .product__text-overlay .product__title {
+      text-align: center; } }
 
 @media only screen and (max-width: 768px) {
   .product__text-overlay p {
@@ -9411,6 +9450,13 @@ main {
       height: 100%;
       background-color: transparent;
       padding: 1rem 1.5rem; } }
+  @media only screen and (max-width: 576px) {
+    .product__text-overlay {
+      color: var(--white);
+      position: static;
+      width: 100%;
+      background-color: var(--blue-dark);
+      padding: 0.5rem 6rem 1rem; } }
 
 .product__stats {
   -ms-flex-pack: distribute;
@@ -9422,6 +9468,11 @@ main {
       .product__stats .stat {
         font-size: 1rem;
         margin-bottom: 0; } }
+    @media only screen and (max-width: 576px) {
+      .product__stats .stat {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600; } }
   .product__stats .label {
     font-weight: 700;
     font-size: 0.8rem; }
@@ -9432,6 +9483,9 @@ main {
       .product__stats .label {
         font-size: 0.7rem;
         margin-bottom: 0; } }
+    @media only screen and (max-width: 576px) {
+      .product__stats .label {
+        padding-bottom: 0.5rem; } }
 
 .carousel-control-prev .carousel-control-prev-icon {
   height: 6vw; }
@@ -9476,10 +9530,51 @@ main {
       font-size: 0.7rem; }
       .product__explore p {
         margin-bottom: 0; } }
+  @media only screen and (max-width: 576px) {
+    .product__explore {
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      height: auto;
+      position: static; } }
 
 @media only screen and (max-width: 992px) {
   #product__carousel-content img {
     position: static; } }
+
+@media only screen and (max-width: 576px) {
+  .product__type svg {
+    height: 20%;
+    width: 60%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media only screen and (max-width: 576px) {
+  .product__type + p {
+    display: none; } }
+
+@media only screen and (max-width: 576px) {
+  .product__buttons {
+    padding: 0 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+
+@media only screen and (max-width: 576px) {
+  .product__buttons button {
+    margin-right: 0.5rem; } }
 
 /*! COME-AND-BUY SECTION*/
 #come-and-buy {

@@ -14,3 +14,12 @@
 //     // border-#{$position}-radius: $border-radius; 
 //     // border-bottom-#{$position}-radius: $border-radius;
 // }
+
+
+@mixin rs-product__textoverlay-lg-sm{
+    color: var(--white);
+    position: static;
+    width: 100%;
+    background-color: var(--blue-dark);
+
+}

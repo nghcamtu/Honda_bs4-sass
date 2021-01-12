@@ -17,12 +17,16 @@
             font-size: 0.8rem;
             margin-bottom: 0;
         }
+        @media only screen and (max-width: 576px){
+            text-align: center;
+        }
     }
     p {
         @media only screen and (max-width: 768px){
             font-size: 0.7rem;
         }
     }
+    
     
 }
 
@@ -64,10 +68,11 @@
     padding: 3rem 2rem;
     
     @media only screen and (max-width: 992px){
-        color: var(--white);
-        position: static;
-        width: 100%;
-        background-color: var(--blue-dark);
+        @include rs-product__textoverlay-lg-sm;
+        // color: var(--white);
+        // position: static;
+        // width: 100%;
+        // background-color: var(--blue-dark);
     }
     @media only screen and (max-width: 768px){
         position: absolute;
@@ -75,6 +80,11 @@
         height: 100%;
         background-color: transparent;
         padding: 1rem 1.5rem;
+    }
+    @media only screen and (max-width: 576px){
+        @include rs-product__textoverlay-lg-sm;
+        padding: 0.5rem 6rem 1rem;
+        
     }
 }
 .product__stats{
@@ -85,6 +95,12 @@
         @media only screen and (max-width: 768px){
             font-size: 1rem;
             margin-bottom: 0;
+        }
+        @media only screen and (max-width: 576px){
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+           
         }
     }
     .label{
@@ -97,6 +113,10 @@
         @media only screen and (max-width: 768px){
             font-size: 0.7rem;
             margin-bottom: 0;
+            
+        }
+        @media only screen and (max-width: 576px){
+            padding-bottom: 0.5rem;
         }
     }
 }
@@ -153,6 +173,16 @@
         font-size: 0.7rem;
         p{margin-bottom: 0;}
     }
+    @media only screen and (max-width: 576px){
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        // padding: 0;
+        // margin-bottom: 0;
+        height: auto;
+        position: static;
+        
+    }
 }
 
 #product__carousel-content{
@@ -163,8 +193,41 @@
     }
 }
 
+.product__type {
+    svg {   
+        @media only screen and (max-width: 576px){
+            height: 20%;
+            width: 60%;
+            margin: auto;
+            display: flex;
+        }
+    }
+    &+p{
+        @media only screen and (max-width: 576px){
+            display: none;
+        }
+        
+    }
+}
 
-
+.product__buttons{
+    
+        @media only screen and (max-width: 576px){  
+            padding: 0 2.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            // background-color: green; 
+        }
+    button {
+        @media only screen and (max-width: 576px){
+            margin-right: 0.5rem;
+        }
+    
+    
+    }
+}
 
 // @media only screen and (max-width: 992px){
 //     .product__carousel {

@@ -90,6 +90,7 @@
     .header__menu-title{
         font-size: 0.7rem;
         letter-spacing: 1px;
+        display: block;
     }
     
 }
@@ -111,3 +112,45 @@
     }
 }
 
+//header hamburger
+#header__hamburger {
+    width: 2.5rem;
+    // background-color: lawngreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    .line{
+        width: 2rem;
+        height: 3px;
+        border-radius: 1rem;
+        background-color: var(--white);
+        // margin-bottom: 0.25rem;
+        margin: 0.25rem 0 0;
+    }
+    
+    &.open {
+        .line{
+            margin: 0rem 0.5rem;
+        }
+        .line-1{
+            transform: rotate(45deg) translate(2px, 2px);
+        }
+        .line-2{
+            transform: rotate(-45deg) translate(-1px, 0);
+        }
+        .header__menu-title{
+            display: none;
+        }
+    }
+    
+    
+    // .line-1{
+    //     transform: rotate(45deg);
+    // }
+    // .line-2{
+    //     transform: rotate(-45deg);
+    // }
+
+}
